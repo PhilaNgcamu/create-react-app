@@ -10,4 +10,6 @@ Why use JSX?
 
 - You can use JSX as an expression by assigning it to variables, as argument to functions, etc. Reference: [intro.jsx](intro.jsx) from line 16.
 
-- React DOM(all dom nodes manipulated by React) uses camelCase property naming conventiom, which is consistent with JavaScript syntax. Reference: [intro.jsx](intro.jsx) from line 24.
+- React DOM(all nodes are manipulated by React) uses camelCase property naming conventiom, which is consistent with JavaScript syntax. Reference: [intro.jsx](intro.jsx) from line 24.
+
+- To prevent XSS(cross-site-attacks), where embedded values in JSX are "escaped" to ensure that they are used only and never by external injection on the application. Reference: [intro.jsx](intro.jsx) from line 37.

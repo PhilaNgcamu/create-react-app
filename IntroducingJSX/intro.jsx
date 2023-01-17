@@ -33,3 +33,8 @@ const childElement = (
     <h2>Good to see you here</h2>
   </div>
 );
+
+//JSX prevents Injection Attacks
+const title = response.potentiallyMaliciousInput;
+//This is safe:
+const safer = <h1>{title}</h1>;
