@@ -20,3 +20,8 @@ function getGreeting(user) {
   }
   return <h1>Hello, Stranger.</h1>;
 }
+
+//Specifying Attributes with JSX
+const aElement = <a href="https://www.reactjs.org">link</a>;
+//Or
+const imgElement = <img src={user.avatarUrl} />;
