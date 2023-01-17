@@ -25,3 +25,11 @@ function getGreeting(user) {
 const aElement = <a href="https://www.reactjs.org">link</a>;
 //Or
 const imgElement = <img src={user.avatarUrl} />;
+
+//Specifying Children with JSX
+const childElement = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here</h2>
+  </div>
+);
