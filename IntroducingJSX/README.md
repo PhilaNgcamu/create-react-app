@@ -13,3 +13,5 @@ Why use JSX?
 - React DOM(all nodes are manipulated by React) uses camelCase property naming conventiom, which is consistent with JavaScript syntax. Reference: [intro.jsx](intro.jsx) from line 24.
 
 - To prevent XSS(cross-site-attacks), where embedded values in JSX are "escaped" to ensure that they are used only and never by external injection on the application. Reference: [intro.jsx](intro.jsx) from line 37.
+
+- React elements are objects that are used to construct the DOM and keep up to date. Note: Babel compiles down to the react elements if they have an alternative of them. Reference: [intro.jsx](intro.jsx) from line 42.

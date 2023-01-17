@@ -38,3 +38,10 @@ const childElement = (
 const title = response.potentiallyMaliciousInput;
 //This is safe:
 const safer = <h1>{title}</h1>;
+
+//JSX represents objects
+const createElement = React.createElement(
+  "h1",
+  { className: "greeting" },
+  "Hello, world!"
+); //this is equivalent to const createElement = (<h1 className="greeting">Hello, world!</h1>)
