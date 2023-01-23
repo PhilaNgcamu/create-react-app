@@ -1,7 +1,13 @@
-//Create a root do manage the dom by React
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//Write the JSX expression to be displayed in the dom
-const element = <h1>Hello, world</h1>;
-//use the render method to display the JSX expression
-root.render(element);
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, World!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  root.render(element);
+}
+
+setInterval(tick, 1000);
