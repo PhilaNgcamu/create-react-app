@@ -1,4 +1,4 @@
-<h1>Components and Prps</h1>
+<h1>Components and Props</h1>
 
 - React lets you define the UI into components.
 
