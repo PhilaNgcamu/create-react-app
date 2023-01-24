@@ -7,3 +7,6 @@ function Welcome(props) {
 //     return <h1>Hello, {this.props.name}</h1>;
 //   }
 // }
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const element = <Welcome name="Sara" />;
