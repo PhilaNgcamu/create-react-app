@@ -10,3 +10,5 @@ function Welcome(props) {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const element = <Welcome name="Sara" />;
+
+root.render(element);
