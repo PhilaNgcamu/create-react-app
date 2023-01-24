@@ -13,3 +13,7 @@
 - To render a component, you may repersent them as user-defined elements, where the JSX attributes & children are passed as an object (props). Reference: [componentsAndProps.jsx](componentsAndProps.jsx).
 
 - Components can refer to other components in their output. This known as abstraction, which use many components to serve many purposes. Reference: [componentsAndProps.jsx](componentsAndProps.jsx) from line 12.
+
+- You can extract relatively compoments into smaller components that give relevant output according to their functions.
+
+- NOTE: You must never modify props (they should be read only) unless it's required.
