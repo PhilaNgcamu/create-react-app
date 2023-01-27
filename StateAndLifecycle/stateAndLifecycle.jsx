@@ -28,6 +28,8 @@ class Clock extends React.Component {
       </div>
     );
   }
+  componentDidMount() {}
+  componentWillUnmount() {}
 }
 
 root.render(<Clock />);
