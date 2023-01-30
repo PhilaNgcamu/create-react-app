@@ -11,3 +11,5 @@
 - NOTE: use `this.state` in the constructor only and use `this.setState(...)` in any method to re-render the component.
 
 - React may use `this.setState({...})` calls into a single update (updated asynchronously) due to perfomance, which we may not want in this case. To fix this, use a function (rather than an object) as an argument in `this.setState()` to "control" the time whereby it takes in the state and other parameter(s) to update at that time. Reference: [stateAndLifecycle.jsx](stateAndLifecycle.jsx).
+
+- NOTE: The state updates are merged into the current state using `this.setState(...)` calls.
