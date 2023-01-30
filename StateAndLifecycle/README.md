@@ -9,3 +9,5 @@
 - The react component has the state to re-render the component according to its argument. This simply means that the component has a method which updates the UI under a condition: Reference: [stateAndLifecycle.jsx](stateAndLifecycle.jsx).
 
 - NOTE: use `this.state` in the constructor only and use `this.setState(...)` in any method to re-render the component.
+
+- React may use `this.setState({...})` calls into a single update (while some things may not be update on time) due to perfomance. To fix this, use a function as an argument to "control" the time whereby it takes in the state and other parameter(s) to update at that time. Reference: [stateAndLifecycle.jsx](stateAndLifecycle.jsx).
