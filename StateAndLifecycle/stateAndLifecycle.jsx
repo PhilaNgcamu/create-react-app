@@ -29,6 +29,9 @@ class Clock extends React.Component {
 
 root.render(<Clock />);
 
-//States may be updated asynchronously
+//States may be updated asynchronously to fix this, do this instead:
+this.setState((state, props) => {
+  counter: state.counter + props.increment;
+});
 
 //export default Clock;
