@@ -29,4 +29,6 @@ class Clock extends React.Component {
 
 root.render(<Clock />);
 
+//States may be updated asynchronously
+
 //export default Clock;
