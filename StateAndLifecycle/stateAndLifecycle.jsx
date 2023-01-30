@@ -23,7 +23,7 @@ class Clock extends React.Component {
     clearInterval(this.timerID);
   }
   tick() {
-    this.state({ date: new Date() });
+    this.setState({ date: new Date() });
   }
 }
 
