@@ -1,3 +1,5 @@
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 const names = "Josh Perez";
 const element = <h1>Hello, {names}</h1>; //Hello, Josh Perez
 
