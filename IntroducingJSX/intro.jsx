@@ -61,8 +61,10 @@ export function TodoList() {
   );
 }
 
-export default function Avatar() {
-  const avatar = "https://i.imgur.com/7vQD0fPs.jpg";
-  const description = "Gregorio Y. Zara";
-  return <img src={avatar} alt={description} />;
+export function Avatar({ person, size }) {
+  return <div className="avatar" alt={person.name} width={size}></div>;
+}
+
+export default function Profile() {
+  return <Avatar person={{ name: "Lin Lanying" }} size={100} />;
 }
