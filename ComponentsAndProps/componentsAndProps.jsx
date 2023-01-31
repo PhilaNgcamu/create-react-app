@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 function App() {
   return (
     <div>
-      <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
+      <Welcome name="Esther" />
+      <Welcome name="Phila" />
+      <Welcome name="Happy" />
     </div>
   );
 }
