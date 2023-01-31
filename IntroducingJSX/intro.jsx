@@ -48,6 +48,7 @@ const createElement = React.createElement(
   "Hello, world!"
 ); //this is equivalent to const createElement = (<h1 className="greeting">Hello, world!</h1>)
 
+//Make a TodoList component to be rendered in anothers file.
 export default function TodoList() {
   return (
     <>
