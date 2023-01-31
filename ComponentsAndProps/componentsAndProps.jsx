@@ -19,6 +19,4 @@ function App() {
   );
 }
 
-const element = <App />;
-
-root.render(element);
+root.render(<App />);
