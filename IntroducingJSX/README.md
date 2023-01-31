@@ -15,3 +15,5 @@ Why use JSX?
 - To prevent XSS(cross-site-attacks), where embedded values in JSX are "escaped" to ensure that they are used only and never by external injection on the application. Reference: [intro.jsx](intro.jsx) from line 37.
 
 - React elements are objects that are used to construct the DOM and keep up to date. Note: Babel compiles down to the react elements, if they have an alternative to them. Reference: [intro.jsx](intro.jsx) from line 42.
+
+- NOTE: The purpose of JSX is to combine JavaScript knowledge with content on the web at the same time!

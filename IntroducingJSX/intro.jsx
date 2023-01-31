@@ -49,7 +49,7 @@ const createElement = React.createElement(
 ); //this is equivalent to const createElement = (<h1 className="greeting">Hello, world!</h1>)
 
 //Make a TodoList component to be rendered in anothers file.
-export default function TodoList() {
+export function TodoList() {
   return (
     <>
       <ul>
@@ -59,4 +59,10 @@ export default function TodoList() {
       </ul>
     </>
   );
+}
+
+export default function Avatar() {
+  const avatar = "https://i.imgur.com/7vQD0fPs.jpg";
+  const description = "Gregorio Y. Zara";
+  return <img src={avatar} alt={description} />;
 }
