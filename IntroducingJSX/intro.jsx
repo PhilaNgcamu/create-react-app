@@ -61,14 +61,22 @@ export function TodoList() {
   );
 }
 
+function Card({ children }) {
+  return <div>{children}</div>;
+}
+
 function Avatar({ person, age }) {
   return (
     <div>
-      {person.name} and he is age:{age}
+      {person.name} and he is aged: {age}
     </div>
   );
 }
 
 export default function Profile() {
-  return <Avatar person={{ name: "Philasande Ngcamu" }} age={33} />;
+  return (
+    <Card>
+      <Avatar person={{ name: "Philasande Ngcamu" }} age={33} />
+    </Card>
+  );
 }
