@@ -1,4 +1,4 @@
-# Introducing JSX
+<h1>Introducing JSX</h1>
 
 JSX - a syntax extension of JavaScript
 
