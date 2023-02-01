@@ -61,10 +61,14 @@ export function TodoList() {
   );
 }
 
-export function Avatar({ person, size }) {
-  return <div className="avatar" alt={person.name} width={size}></div>;
+function Avatar({ person, age }) {
+  return (
+    <div>
+      {person.name} and he is age:{age}
+    </div>
+  );
 }
 
 export default function Profile() {
-  return <Avatar person={{ name: "Lin Lanying" }} size={100} />;
+  return <Avatar person={{ name: "Philasande Ngcamu" }} age={33} />;
 }
