@@ -19,3 +19,7 @@ Why use JSX?
 - Sometimes we may want to nest components like this: `<ParentComponent><ChildComponent /></ParentComponent>`. Reference: [intro.jsx](intro.jsx).
 
 - NOTE: The purpose of JSX is to combine JavaScript knowledge with content on the web at the same time!
+
+<h1>Conditional Rendering</h1>
+
+The components need to display different things depending on different conditions by using conditional operators and if statements.
