@@ -22,4 +22,4 @@ Why use JSX?
 
 <h1>Conditional Rendering</h1>
 
-The components need to display different things depending on different conditions by using conditional operators and if statements.
+The components need to display different things depending on different conditions by using conditional operators and if statements. Reference: [conditionalRendering.jsx](conditionalRendering.jsx).
