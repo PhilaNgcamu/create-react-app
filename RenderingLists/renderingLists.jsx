@@ -46,10 +46,9 @@ export default function List() {
   const listItems = chemists.map((person) => (
     <li>
       <img src={getImageUrl(person)} alt={person.name} />
-      <b>
-        {person.name}: <p>{person.accomplishment}</p>
-      </b>
+      <b> {person.name}:</b>
+      <p>{person.accomplishment}</p>
     </li>
   ));
-  return listItems;
+  return <ul>{listItems}</ul>;
 }
