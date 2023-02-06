@@ -37,7 +37,19 @@ const people = [
   },
 ];
 
+function getImageUrl(person) {
+  return "https://i.imgur.com" + person.imageId + "s.jpg";
+}
+
 export default function List() {
-  const listItems = people.map((person) => <li>{person}</li>);
+  const chemists = people.filter((person) => person.profession === "chemist");
+  const listItems = chemists.map((person) => (
+    <li>
+      <img src={getImageUrl(person)} alt={person.name} />
+      <b>
+        {person.name}: <p>{person.accomplishment}</p>
+      </b>
+    </li>
+  ));
   return listItems;
 }
