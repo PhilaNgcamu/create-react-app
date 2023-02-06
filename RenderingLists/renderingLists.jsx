@@ -44,7 +44,7 @@ function getImageUrl(person) {
 export default function List() {
   const chemists = people.filter((person) => person.profession === "chemist");
   const listItems = chemists.map((person) => (
-    <li>
+    <li key={person.id}>
       <img src={getImageUrl(person)} alt={person.name} />
       <b> {person.name}:</b>
       <p>{person.accomplishment}</p>
