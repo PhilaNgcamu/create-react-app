@@ -2,4 +2,4 @@
 
 - Pure functions only involves calculation, without affecting the input data - which helps to avoid bugs and unpredictable behaviour.
 
-- React is designed around the concept of pure functions. The same input should return the same output, provided that it returns JSX.
+- React is designed around the concept of pure functions. The same input should return the same output, provided that it returns JSX. Reference: [pureFunctions.jsx](pureFunctions.jsx)
