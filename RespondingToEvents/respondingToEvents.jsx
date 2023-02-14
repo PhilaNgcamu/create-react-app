@@ -5,20 +5,20 @@ export function AlertButton() {
   return <button onClick={handleClick}>Click Me!</button>;
 }
 
-function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>;
+function Button({ onPlay, children }) {
+  return <button onClick={onPlay}>{children}</button>;
 }
 
 function PlayButton({ movieName }) {
   function handleClick() {
     alert(`Playing ${movieName}`);
   }
-  return <Button onClick={handleClick}>Play {movieName}</Button>;
+  return <Button onPlay={handleClick}>Play {movieName}</Button>;
 }
 
 function UploadImage() {
   return (
-    <Button onClick={() => alert("Uploading Image")}>Uploading Image</Button>
+    <Button onPlay={() => alert("Uploading Image")}>Uploading Image</Button>
   );
 }
 
