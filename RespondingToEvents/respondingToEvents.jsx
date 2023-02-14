@@ -5,15 +5,28 @@ export function AlertButton() {
   return <button onClick={handleClick}>Click Me!</button>;
 }
 
-function Button({ message, children }) {
-  return <button onClick={() => alert(message)}>{children}</button>;
+function Button({ onClick, children }) {
+  return <button onClick={onClick}>{children}</button>;
+}
+
+function PlayButton({ movieName }) {
+  function handleClick() {
+    alert(`Playing ${movieName}`);
+  }
+  return <Button onClick={handleClick}>Play {movieName}</Button>;
+}
+
+function UploadImage() {
+  return (
+    <Button onClick={() => alert("Uploading Image")}>Uploading Image</Button>
+  );
 }
 
 export default function ToolBar() {
   return (
     <>
-      <Button message="Playing Music!">Play Music</Button>
-      <Button message="Playing Movie!">Play Movie</Button>
+      <UploadImage />
+      <PlayButton movieName="Playing Movie!" />
     </>
   );
 }
