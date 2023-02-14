@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 export function Button() {
   function handleClick() {
     alert("You Clicked Me!");
