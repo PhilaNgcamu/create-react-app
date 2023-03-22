@@ -15,4 +15,9 @@
 - The parent component **Gallery** renders the child component, **Profile** 3 times. Reference: [components.js](components.js).
 
 > **Warning**
-> Never define a component inside a component beacuse the component would be slow and buggy. Instead, define it independantly (top level)
+> Never define a component inside a component beacuse the component would be slow and buggy. Rather, define it independantly (top level).
+
+<h1>Importing and Exporting Components</h1>
+
+- Components are meant to be reused inside components. If there more componets in the file, you might want to place them in a separate file to be exported from there to be reused in other files.
+- You may need to create a new JS file, [profile.js](profile.js). Then export the component defined in that file to be use in [components.js](components.js) to be rendered there.
