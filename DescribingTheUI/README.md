@@ -21,3 +21,14 @@
 
 - Components are meant to be reused inside components. If there more componets in the file, you might want to place them in a separate file to be exported from there to be reused in other files.
 - You may need to create a new JS file, [profile.js](profile.js). Then export the component defined in that file to be use in [components.js](components.js) to be rendered there.
+
+<h1>Writing Markup with JSX</h1>
+
+- JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+
+<h1>The Rules of JSX</h2>
+
+- When converting HTML to JSX there are rules that need to be followed:
+  - Wrap the multiple elements/tags in a single parent tags. You may use a fragment, `<></>` or any relevant tag.
+  - Close all tags.
+  - camelCase almost of the things, such as attributes and props.
