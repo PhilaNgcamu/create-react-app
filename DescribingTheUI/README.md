@@ -28,7 +28,7 @@
 
 <h1>The Rules of JSX</h2>
 
-- When converting HTML to JSX there are rules that need to be followed:
+- When converting HTML to JSX there are rules that need to be followed. Reference: [markup.js](markup.js):
   - Wrap the multiple elements/tags in a single parent tags. You may use a fragment, `<></>` or any relevant tag.
   - Close all tags.
   - camelCase almost of the things, such as attributes and props.
