@@ -6,8 +6,9 @@
 
 <h2>Define A Component</h2>
 
-- To define a component, declare a function name with the capital letter then return the JSX expression (which is the extension syntax of JavaScript for React).
+- To define a component, declare a function name with the capital letter then return the JSX expression (which is the extension syntax of JavaScript for React). Reference: [components.js](components.js).
 
 <h2>Using A Component</h2>
 
 - Lets nest the defined component in another component to be exported with `export default` keywords to show the rendered content. Reference: [components.js](components.js).
+- The browser sees what the component is returning/rendering, i.e. it recognises the HTML tags and its content. Reference: [components.js](components.js).
