@@ -2,3 +2,4 @@
 
 - **Components** are the foundational building blocks in when building the UI in React.
 - Components are building blocks of UI
+- Lets define a component. Reference: [components.js](components.js)
