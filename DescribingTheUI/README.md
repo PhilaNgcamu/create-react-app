@@ -32,3 +32,5 @@
   - Wrap the multiple elements/tags in a single parent tags. You may use a fragment, `<></>` or any relevant tag.
   - Close all tags.
   - camelCase almost of the things, such as attributes and props.
+
+<h1>JavaScript in JSX with Curly Braces</h1>
