@@ -31,11 +31,11 @@ export function TodoList() {
     <>
       <h1>{person.name}'s Todo List:</h1>
       <img className={person.className} src={person.avatar} alt={person.name} />
-      <ul style={person.theme}>
-        <li>1. Clean.</li>
-        <li>2. Cook.</li>
-        <li>3. Study.</li>
-      </ul>
+      <ol style={person.theme}>
+        <li>Clean.</li>
+        <li>Cook.</li>
+        <li>Study.</li>
+      </ol>
     </>
   );
 }
