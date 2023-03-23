@@ -39,4 +39,6 @@
 
 <h2>Passing strings with quotes</h2>
 
-- Pass a string attribute, where it takes in a string value to JSX, by putting in single/double quotes. Reference: [stringInJsx.js](stringInJsx.js)
+- Pass a string attribute, where it takes in a string value to JSX, by putting in single/double quotes. Reference: [stringInJsx.js](stringInJsx.js).
+
+- However, you would want to store these string parameters in variables and then pass variables with string attributes, dynamically. Reference: [stringInJsx.js](stringInJsx.js).
