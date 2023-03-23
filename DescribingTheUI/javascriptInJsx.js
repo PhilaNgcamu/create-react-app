@@ -22,15 +22,20 @@ const person = {
     backgroundColor: "black",
     color: "yellow",
   },
-  avatar: "https://i.imgur.com/7vQD0fPs.jpg",
+  baseUrl: "https://i.imgur.com/",
+  imageUrl: "7vQD0fPs.jpg",
   className: "avatar",
 };
+
+function getImage() {
+  return person.baseUrl + person.imageUrl;
+}
 
 export function TodoList() {
   return (
     <>
       <h1>{person.name}'s Todo List:</h1>
-      <img className={person.className} src={person.avatar} alt={person.name} />
+      <img className={person.className} src={getImage()} alt={person.name} />
       <ol style={person.theme}>
         <li>Clean.</li>
         <li>Cook.</li>
