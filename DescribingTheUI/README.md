@@ -34,3 +34,9 @@
   - camelCase almost of the things, such as attributes and props.
 
 <h1>JavaScript in JSX with Curly Braces</h1>
+
+- At some point you will want to add some JavaScript logic and JSX will help you with that.
+
+<h2>Passing strings with quotes</h2>
+
+- Pass a string attribute, where it takes in a string value to JSX, by putting in single/double quotes. Reference: [stringInJsx.js](stringInJsx.js)
