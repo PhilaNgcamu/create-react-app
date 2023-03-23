@@ -49,4 +49,4 @@
 
 - You can also pass in objects in JSX (`{{...}}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
 
-- You can move JavaScript expressions in object. Reference: [javascriptInJsx.js](javascriptInJsx.js).
+- You can move JavaScript expressions in object and refernce them in JSX inside curly braces (`{}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
