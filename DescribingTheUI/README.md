@@ -45,6 +45,8 @@
 
 <h2>Using curly braces: A window into the JavaScript world</h2>
 
-- You can use any JavaScript logic inside JSX by the use of curly braces (`{}`). Reference: [stringInJsx.js](stringInJsx.js).
+- You can use any JavaScript logic inside JSX by the use of curly braces (`{}`). Reference: Reference: [javascriptInJsx.js](javascriptInJsx.js).
 
-- You can also pass in objects in JSX (`{{...}}`). Reference: [stringInJsx.js](stringInJsx.js).
+- You can also pass in objects in JSX (`{{...}}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
+
+- You can move JavaScript expressions in object. Reference: [javascriptInJsx.js](javascriptInJsx.js).
