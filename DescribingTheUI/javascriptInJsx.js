@@ -22,12 +22,15 @@ const person = {
     backgroundColor: "black",
     color: "yellow",
   },
+  avatar: "https://i.imgur.com/7vQD0fPs.jpg",
+  className: "avatar",
 };
 
 export function TodoList() {
   return (
     <>
       <h1>{person.name}'s Todo List:</h1>
+      <img className={person.className} src={person.avatar} alt={person.name} />
       <ul style={person.theme}>
         <li>1. Clean.</li>
         <li>2. Cook.</li>
