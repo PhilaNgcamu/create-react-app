@@ -45,4 +45,4 @@
 
 <h2>Using curly braces: A window into the JavaScript world</h2>
 
-- You can use JavaScript inside JSX by the use of curly braces. Reference: [stringInJsx.js](stringInJsx.js).
+- You can use any JavaScript logic inside JSX by the use of curly braces. Reference: [stringInJsx.js](stringInJsx.js).
