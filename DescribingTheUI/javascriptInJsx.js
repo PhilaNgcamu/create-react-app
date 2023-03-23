@@ -15,3 +15,18 @@ export function TodoList() {
   const name = "Philasande Ngcamu";
   return <h1>{formatDate(today)}'s To Do List</h1>;
 }
+
+export function TodoList() {
+  return (
+    <ul
+      style={{
+        backgroundColor: "black",
+        color: "yellow",
+      }}
+    >
+      <li>1. This is yellow.</li>
+      <li>2. This is yellow.</li>
+      <li>3. This is yellow.</li>
+    </ul>
+  );
+}
