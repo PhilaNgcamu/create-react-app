@@ -16,17 +16,23 @@ export function TodoList() {
   return <h1>{formatDate(today)}'s To Do List</h1>;
 }
 
+const person = {
+  name: "Philasande Happy Ngcamu",
+  theme: {
+    backgroundColor: "black",
+    color: "yellow",
+  },
+};
+
 export function TodoList() {
   return (
-    <ul
-      style={{
-        backgroundColor: "black",
-        color: "yellow",
-      }}
-    >
-      <li>1. This is yellow.</li>
-      <li>2. This is yellow.</li>
-      <li>3. This is yellow.</li>
-    </ul>
+    <>
+      <h1>{person.name}'s Todo List:</h1>
+      <ul style={person.theme}>
+        <li>1. Clean.</li>
+        <li>2. Cook.</li>
+        <li>3. Study.</li>
+      </ul>
+    </>
   );
 }
