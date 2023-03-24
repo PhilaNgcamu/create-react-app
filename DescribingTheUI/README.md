@@ -65,3 +65,4 @@
 - Reference: [props.js](props.js).
 - How to pass props to a component:
   - First, pass some props that are JavaScript expressions to a child component.
+  - The child component should have the same props as above. Insert them in the parameters of function with `({prop1, prop2})`.

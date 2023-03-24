@@ -1,9 +1,11 @@
-function Avatar() {
+function Avatar({ person, size }) {
   return (
     <img
       classname="avatar"
       src="https://i.imgur.com/1bX5QH6.jpg"
-      alt="Philasande Happy Ngcamu"
+      alt={person.name}
+      width={size}
+      height={size}
     />
   );
 }
