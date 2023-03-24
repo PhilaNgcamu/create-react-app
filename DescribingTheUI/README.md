@@ -54,8 +54,14 @@
 <h1>Passing Props to a Component</h1>
 
 - React components use **props** to pass information to each other.
-- Every parent component passes information to its child component by giving them props. Reference: [Props.js](Props.js).
+- Every parent component passes information to its child component by giving them props. Reference: [props.js](props.js).
 
-<h1>Familiar Props</h1>
+<h2>Familiar Props</h2>
 
-- You can pass in props in JSX tags. For example, you can pass relevent props in `src`, `alt`, `className` to the `img` tag. Where they are predefined to the tag, according to the HTML standard. Reference: [Props.js](Props.js).
+- You can pass in props in JSX tags. For example, you can pass relevent props in `src`, `alt`, `className` to the `img` tag. Where they are predefined to the tag, according to the HTML standard. Reference: [props.js](props.js).
+
+<h2>Passing props to a component</h2>
+
+- Reference: [props.js](props.js).
+- How to pass props to a component:
+  - First, pass some props that are JavaScript expressions to a child component.
