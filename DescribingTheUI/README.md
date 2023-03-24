@@ -55,3 +55,7 @@
 
 - React components use **props** to pass information to each other.
 - Every parent component passes information to its child component by giving them props. Reference: [props.js](props.js).
+
+<h1>Familiar Props</h1>
+
+- You can pass in props in JSX tags. For example, you can pass relevent props in `src`, `alt`, `className` to the `img` tag.
