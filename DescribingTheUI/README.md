@@ -68,4 +68,4 @@
   - The child component should have the same props as above. Insert them in the parameters of function with `({prop1, prop2})`.
 
 > **Note**
-> Pass the props in the parent component then the child component will _adjust_ how the rendered JSx is displayed
+> Pass the props in the parent component then the child component will _adjust_ how the rendered JSX is displayed
