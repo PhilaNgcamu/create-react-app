@@ -52,3 +52,6 @@
 - You can move JavaScript expressions in object and refernce them in JSX inside curly braces (`{}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
 
 <h1>Passing Props to a Component</h1>
+
+- React components use **props** to pass information to each other.
+- Every parent component passes information to its child component by giving them props. Reference: [props.js](props.js).
