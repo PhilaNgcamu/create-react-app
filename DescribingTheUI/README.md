@@ -79,3 +79,5 @@
   <Avatar />
 </Card>
 ```
+
+- When you nest content inside a JSX tag, the parent component will recieve that content in a prop called **children**. For Example, the `Card` component renders the div with the child prop nested inside it. Reference: [props.js](props.js).
