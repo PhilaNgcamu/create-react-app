@@ -68,4 +68,14 @@
   - The child component should have the same props as above. Insert them in the parameters of function with `({prop1, prop2})`.
 
 > **Note**
-> Pass the props in the parent component then the child component will _adjust_ how the rendered JSX is displayed
+> Pass the props in the parent component then the child component will _adjust_ how the rendered JSX is displayed.
+
+<h2>Passing JSX as children</h2>
+
+- In the same way HTML tags can be nested, the components can be nested as well. For Example:
+
+```
+<Card>
+  <Avatar />
+</Card>
+```
