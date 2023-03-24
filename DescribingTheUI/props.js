@@ -14,21 +14,19 @@ function getImageUrl(person, size = "s") {
   return "https://i.imgur.com/" + person.imageId + size + ".jpg";
 }
 
+function Card({ children }) {
+  return <div>{children}</div>;
+}
+
 export default function Profile() {
   return (
     <>
-      <Avatar
-        person={{ name: "Philasande Ngcamu", imageId: "1bX5QH6" }}
-        size={100}
-      />
-      <Avatar
-        person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
-        size={100}
-      />
-      <Avatar
-        person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
-        size={100}
-      />
+      <Card>
+        <Avatar
+          person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
+          size={100}
+        />
+      </Card>
     </>
   );
 }
