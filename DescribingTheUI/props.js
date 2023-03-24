@@ -1,4 +1,4 @@
-function Avatar({ person, size }) {
+function Avatar({ person, size = 100 }) {
   return (
     <img
       classname="avatar"
