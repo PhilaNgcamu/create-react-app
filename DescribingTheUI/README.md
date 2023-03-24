@@ -58,4 +58,4 @@
 
 <h1>Familiar Props</h1>
 
-- You can pass in props in JSX tags. For example, you can pass relevent props in `src`, `alt`, `className` to the `img` tag. Reference: [Props.js](Props.js).
+- You can pass in props in JSX tags. For example, you can pass relevent props in `src`, `alt`, `className` to the `img` tag. Where they are predefined to the tag, according to the HTML standard. Reference: [Props.js](Props.js).
