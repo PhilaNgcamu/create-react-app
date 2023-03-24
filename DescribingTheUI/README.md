@@ -39,17 +39,17 @@
 
 <h2>Passing strings with quotes</h2>
 
-- Pass a string attribute, where it takes in a string value to JSX, by putting in single/double quotes. Reference: [stringInJsx.js](stringInJsx.js).
+- Pass a string attribute, where it takes in a string value to JSX, by putting in single/double quotes. Reference: [JavascriptInJsx.js](JavascriptInJsx.js).
 
-- However, you would want to store these string parameters in variables and then pass variables with string attributes, dynamically. Reference: [stringInJsx.js](stringInJsx.js).
+- However, you would want to store these string parameters in variables and then pass variables with string attributes, dynamically. Reference: [JavascriptInJsx.js](JavascriptInJsx.js).
 
 <h2>Using curly braces: A window into the JavaScript world</h2>
 
-- You can use any JavaScript logic inside JSX by the use of curly braces (`{}`). Reference: Reference: [javascriptInJsx.js](javascriptInJsx.js).
+- You can use any JavaScript logic inside JSX by the use of curly braces (`{}`). Reference: Reference: [JavascriptInJsx.js](JavascriptInJsx.js).
 
-- You can also pass in objects in JSX (`{{...}}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
+- You can also pass in objects in JSX (`{{...}}`). Reference: [JavascriptInJsx.js](JavascriptInJsx.js).
 
-- You can move JavaScript expressions in object and refernce them in JSX inside curly braces (`{}`). Reference: [javascriptInJsx.js](javascriptInJsx.js).
+- You can move JavaScript expressions in object and refernce them in JSX inside curly braces (`{}`). Reference: [JavascriptInJsx.js](JavascriptInJsx.js).
 
 <h1>Passing Props to a Component</h1>
 
