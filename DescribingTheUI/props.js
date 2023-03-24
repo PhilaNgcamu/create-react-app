@@ -1,11 +1,11 @@
-function Avatar({ person, size = 100 }) {
+function Avatar({ ...props }) {
   return (
     <img
       classname="avatar"
-      src={getImageUrl(person)}
-      alt={person.name}
-      width={size}
-      height={size}
+      src={getImageUrl(props.person)}
+      alt={props.person.name}
+      width={props.size}
+      height={props.size}
     />
   );
 }
