@@ -10,7 +10,7 @@ export default function PackingList() {
       <ul>
         <Item isPacked={true}>Space suit</Item>
         <Item isPacked={true}>Helmet with a golden leaf</Item>
-        <Item isPacked={true}>Photo of Tam</Item>
+        <Item isPacked={false}>Photo of Tam</Item>
       </ul>
     </section>
   );
