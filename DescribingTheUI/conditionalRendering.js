@@ -1,4 +1,6 @@
 function Item({ children, isPacked }) {
+  let itemContent = children;
+  if (isPacked) itemContent += " ✔";
   return (
     <li className="item">
       {children}
