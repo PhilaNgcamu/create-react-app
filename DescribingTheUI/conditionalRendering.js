@@ -1,5 +1,5 @@
-function Item({ name, isPacked }) {
-  if (isPacked) return <li className="item">{name}</li>;
+function Item({ children, isPacked }) {
+  if (isPacked) return <li className="item">{children}</li>;
 }
 
 export default function PackingList() {
