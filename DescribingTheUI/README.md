@@ -81,3 +81,5 @@
 ```
 
 - When you nest **content** inside a JSX tag, the parent component will recieve that content in a prop called **children**. For Example, the `Card` component renders the div with the content nested inside it. Reference: [props.js](props.js).
+
+<h1>Conditional Rendering</h1>
