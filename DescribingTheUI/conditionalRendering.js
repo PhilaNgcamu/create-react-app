@@ -1,7 +1,8 @@
 function Item({ children, isPacked }) {
   return (
     <li className="item">
-      {isPacked ? <del>{children + " ✔"}</del> : children}
+      {children}
+      {isPacked && " ✔"}
     </li>
   );
 }
