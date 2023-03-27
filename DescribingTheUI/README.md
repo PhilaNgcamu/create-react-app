@@ -85,3 +85,5 @@
 <h1>Conditional Rendering</h1>
 
 - In React you can display different things depending on different conditions. You may use conditionals such as, if-else statements and conditional operators. Therefore, conditionally returning the JSX. Reference: [conditionalRendering.js](conditionalRendering.js).
+
+<h1>Rendering Lists</h1>
