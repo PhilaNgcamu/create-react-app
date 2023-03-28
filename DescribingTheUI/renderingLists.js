@@ -53,7 +53,7 @@ export default function List() {
   const chemists = people2.filter((person) => person.profession === "chemist");
   const listItems = chemists.map((chemist) => {
     return (
-      <li>
+      <li key={chemist.id}>
         <img src={getImageUrl(chemist)} alt={chemist.name} />
         <p>
           <b>{chemist.name}: </b> {chemist.profession} known for{" "}
