@@ -88,4 +88,4 @@
 
 <h1>Rendering Lists</h1>
 
-- You may use JavaScript array methods to display multiple data from components. Reference: [renderingLists.js](renderingLists.js).
+- To render multiple components from an array/collection of data, use JavaScript array methods to manipulate an array of data. Reference: [renderingLists.js](renderingLists.js).
