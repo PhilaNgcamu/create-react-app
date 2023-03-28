@@ -105,3 +105,5 @@
 ```
 
 - Then in [renderingLists.js](renderingLists.js), store the list items data inside an array.
+
+- In that example, you move the list items in an array. Then use the `map(...)` method to convert each item into JSX expression. Then, render the whole list.
