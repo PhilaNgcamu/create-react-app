@@ -112,3 +112,8 @@
 > Keeping list items in order with `key`. For Example: `<li key={person.id}>...</li>`
 
 <h1>Keeping Components Pure</h1>
+
+- Reference: [pureFunctions.js](pureFunctions.js).
+- Pure functions perform calculations only.
+- By strictly writing components as pure functions, you avoid bugs and unpredictable behaviour.
+- Therefore, they don't change any objects or variables and you can easily predict the outcome of the function when you have known inputs.
