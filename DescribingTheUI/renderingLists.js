@@ -52,13 +52,15 @@ function getImageUrl(person) {
 export default function List() {
   const chemists = people2.filter((person) => person.profession === "chemist");
   const listItems = chemists.map((chemist) => {
-    <li>
-      <img src={getImageUrl(chemist)} alt={chemist.name} />
-      <p>
-        <b>{chemist.name}: </b> {chemist.profession} known for{" "}
-        {chemist.accomplishment}
-      </p>
-    </li>;
+    return (
+      <li>
+        <img src={getImageUrl(chemist)} alt={chemist.name} />
+        <p>
+          <b>{chemist.name}: </b> {chemist.profession} known for{" "}
+          {chemist.accomplishment}
+        </p>
+      </li>
+    );
   });
   return <ul>{listItems}</ul>;
 }
