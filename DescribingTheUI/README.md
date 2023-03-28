@@ -89,3 +89,19 @@
 <h1>Rendering Lists</h1>
 
 - To render multiple components from an array/collection of data, use JavaScript array methods to manipulate an array of data. Reference: [renderingLists.js](renderingLists.js).
+
+<h2>Rendering data from arrays</h2>
+
+- Say that you have a list of content, where the list items show different data:
+
+```
+<ul>
+  <li>Creola Katherine Johnson: mathematician</li>
+  <li>Mario José Molina-Pasquel Henríquez: chemist</li>
+  <li>Mohammad Abdus Salam: physicist</li>
+  <li>Percy Lavon Julian: chemist</li>
+  <li>Subrahmanyan Chandrasekhar: astrophysicist</li>
+</ul>
+```
+
+- Then in [renderingLists.js](renderingLists.js), store the list items data inside an array.
