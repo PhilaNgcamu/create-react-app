@@ -110,3 +110,5 @@
 
 > **Note**:
 > Keeping list items in order with `key`. For Example: `<li key={person.id}>...</li>`
+
+<h1>Keeping Components Pure</h1>
