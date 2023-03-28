@@ -117,3 +117,4 @@
 - Pure functions perform calculations only.
 - By strictly writing components as pure functions, you avoid bugs and unpredictable behaviour.
 - Therefore, they don't change any objects or variables and you can easily predict the outcome of the function when you have known inputs.
+- So in React all components should be pure functions so that it may render the expected JSX.
