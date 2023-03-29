@@ -1,15 +1,18 @@
-function Button({ message, children }) {
-  function handleClick() {
-    alert(`Playing ${message}`);
-  }
-  return <button onClick={handleClick}>{children}</button>;
+function Button({ onClick, children }) {
+  return <button onClick={onClick}>{children}</button>;
 }
 
 function PlayMovie({ movieName }) {
-  return <Button message={movieName}>Playing: {movieName}</Button>;
+  function handleClick() {
+    alert(`Playing ${movieName}`);
+  }
+  return <Button onClick={handleClick}>Playing: {movieName}</Button>;
 }
 function PlayMusic() {
-  return <Button message="music">Playing: music</Button>;
+  function handleClick() {
+    alert(`Playing Music`);
+  }
+  return <Button onClick={handleClick}>Playing Music</Button>;
 }
 
 export default function Toolbar() {
