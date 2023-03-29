@@ -5,10 +5,12 @@
 
 <h2>Adding event handlers</h2>
 
+- They are declared inside a component and the have access to its props.
+
 - Reference: [repsondingToEvents.js](repsondingToEvents.js)
 
 1. Define a function/component named `Button`.
 2. Then, render the JSX of the button tag.
 3. Inside the function define a function named `handleClick`, which would serve a callback for the button tag.
 4. Inside the button tag, declare the onClick attribute that accepts the `handleClick` function.
-5. Inside it declare the function, `alert('You clicked me!')`
+5. Inside it declare the function, `alert('You clicked me!')`.
