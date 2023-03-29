@@ -1,1 +1,1 @@
-<h1>Adding Interactivity</h1>
+<h1>Responding to Events</h1>
