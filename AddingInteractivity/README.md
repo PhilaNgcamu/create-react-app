@@ -18,3 +18,5 @@
 > **Note:**
 > You may often need to have different functions/components for different button, where each function has its own event handler.
 > You can also name your event handler prop.
+
+<h1>State: A Component's Memory</h1>
