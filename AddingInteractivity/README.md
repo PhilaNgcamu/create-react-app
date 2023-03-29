@@ -14,3 +14,6 @@
 3. Inside the function define a function named `handleClick`, which would serve a callback for the button tag.
 4. Inside the button tag, declare the onClick attribute that accepts the `handleClick` function.
 5. Inside it declare the function, `alert('You clicked me!')`.
+
+> **Note:**
+> You may often need to have different functions/components for different button.

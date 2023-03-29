@@ -1,15 +1,22 @@
-export function Button({ message, children }) {
+function Button({ message, children }) {
   function handleClick() {
-    alert(message);
+    alert(`Playing ${message}`);
   }
   return <button onClick={handleClick}>{children}</button>;
+}
+
+function PlayMovie({ movieName }) {
+  return <Button message={movieName}>Playing: {movieName}</Button>;
+}
+function PlayMusic() {
+  return <Button message="music">Playing: music</Button>;
 }
 
 export default function Toolbar() {
   return (
     <>
-      <Button message="Playing!">Play Movie</Button>
-      <Button message="Uploading!">Upload Image</Button>
+      <PlayMovie movieName="Shaolin Soccer">Play Movie</PlayMovie>
+      <PlayMusic>Upload Image</PlayMusic>
     </>
   );
 }
