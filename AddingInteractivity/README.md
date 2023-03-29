@@ -16,4 +16,4 @@
 5. Inside it declare the function, `alert('You clicked me!')`.
 
 > **Note:**
-> You may often need to have different functions/components for different button.
+> You may often need to have different functions/components for different button, where each function has its own event handler.
