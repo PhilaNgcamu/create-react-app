@@ -7,7 +7,7 @@
 
 - They are declared inside a component and the have access to its props.
 
-- Reference: [repsondingToEvents.js](repsondingToEvents.js)
+- Reference: [repsondingToEvents.js](repsondingToEvents.js).
 
 1. Define a function/component named `Button`.
 2. Then, render the JSX of the button tag.
