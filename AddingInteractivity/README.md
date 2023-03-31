@@ -15,7 +15,7 @@
 4. Inside the button tag, declare the onClick attribute that accepts the `handleClick` function.
 5. Inside it declare the function, `alert('You clicked me!')`.
 
-> **Note**
+> **Note**:
 > You may often need to have different functions/components for different button, where each function has its own event handler.
 > You can also name your event handler prop.
 
