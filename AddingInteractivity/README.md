@@ -20,3 +20,7 @@
 > You can also name your event handler prop.
 
 <h1>State: A Component's Memory</h1>
+
+- To update a component with the new data, two things should happen:
+  1. Retain the data when rendering the component.
+  2. Trigger React to render the component with new data. I.e. use the React's, **useState** Hook.
