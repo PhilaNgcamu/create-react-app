@@ -27,3 +27,4 @@
 
   1. Retain the data when rendering the component. Use a state variable.
   2. Trigger React to render the component with new data. Use a state setter function.
+  3. A component can have multiple state variables.
