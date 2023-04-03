@@ -4,8 +4,7 @@ export default function Gallery() {
   const [index, setIndex] = useState(0);
 
   function handleClick() {
-    if (index === 11) setIndex(0);
-    else setIndex(index + 1);
+    setIndex(index + 1);
   }
   let sculpture = sculptureList[index];
   return (
