@@ -28,3 +28,7 @@
   1. Retain the data when rendering the component. Use a state variable.
   2. Trigger React to render the component with new data. Use a state setter function.
   3. A component can have multiple state variables.
+
+<h1>State as a Snapshot</h1>
+
+- Rendering means that React is calling the component. The returned JSX is a snapshot (interactive) that updates the DOM by the use of the state when it renders.
