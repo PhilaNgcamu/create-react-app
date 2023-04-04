@@ -32,3 +32,5 @@
 <h1>State as a Snapshot</h1>
 
 - Rendering means that React is calling the component. The returned JSX is a snapshot (interactive) that updates the DOM by the use of the state when it renders.
+  > **Note**:
+  > A state variable’s value never changes within a render, even if its event handler’s code is asynchronous.
