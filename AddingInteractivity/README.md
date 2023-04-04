@@ -34,3 +34,7 @@
 - Rendering means that React is calling the component. The returned JSX is a snapshot (interactive) that updates the DOM by the use of the state when it renders.
   > **Note**:
   > A state variable’s value never changes within a render, even if its event handler’s code is asynchronous.
+
+<h1>Queueing a Series of State Updates</h1>
+
+- You can update the state while rendering by passing a an update function that calculates the next state based on the previous one in the queue. For, example, `setNumber(n => n + 1)`.
