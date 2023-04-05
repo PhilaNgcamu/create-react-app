@@ -49,4 +49,6 @@
 
 <h1>Updating Arrays in State</h1>
 
-- You can update the arrays without mutation on the original one. Therefore, it's recommended to copy an array before using array methods. Reference: [stateUpdateArrays.js](stateUpdateArrays.js).
+- You can update the arrays without mutation on the original one. Therefore, it's recommended to copy an array before using array methods.
+- We can add, remove, replace and sort the array.
+  Reference: [stateUpdateArrays.js](stateUpdateArrays.js).
