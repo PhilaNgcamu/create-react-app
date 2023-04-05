@@ -40,3 +40,6 @@
 - You can update the state while rendering by passing a an update function that calculates the next state based on the previous one in the queue. For, example, `setNumber(n => n + 1)`. Reference: [stateUpdate.js](stateUpdate.js).
 
 <h1>Updating Objects in State</h1>
+
+- Data types such as booleans, numbers and strings are immutable (not modifiable).
+- Therefore, you cannot change the state variable to another value.
