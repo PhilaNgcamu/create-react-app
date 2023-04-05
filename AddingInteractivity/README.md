@@ -37,4 +37,6 @@
 
 <h1>Queueing a Series of State Updates</h1>
 
-- You can update the state while rendering by passing a an update function that calculates the next state based on the previous one in the queue. For, example, `setNumber(n => n + 1)`. Reference: [stateUpdate.js](stateUpdate.js)
+- You can update the state while rendering by passing a an update function that calculates the next state based on the previous one in the queue. For, example, `setNumber(n => n + 1)`. Reference: [stateUpdate.js](stateUpdate.js).
+
+<h1>Updating Objects in State</h1>
