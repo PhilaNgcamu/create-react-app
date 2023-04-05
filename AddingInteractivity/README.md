@@ -46,3 +46,7 @@
 - The alternative is to consider an object in state. For example, `const [position, setPosition] = useState({ x: 0, y: 0 })`.
 - So, you may change the value of `position.x`. Reference: [stateUpdateObjects.js](stateUpdateObjects.js).
 - You may use the spread operator to copy the old contents in the object in state and then override the exisiting property with new data. Reference: [stateUpdateObjects.js](stateUpdateObjects.js).
+
+<h1>Updating Arrays in State</h1>
+
+- You can update the arrays without mutation on the original one.
