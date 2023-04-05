@@ -43,3 +43,4 @@
 
 - Data types such as booleans, numbers and strings are immutable (not modifiable).
 - Therefore, you cannot change the state variable to another value.
+- The alternative is to consider an object in state. For example, `const [position, setPosition] = useState({ x: 0, y: 0 })`
