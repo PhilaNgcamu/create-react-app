@@ -43,21 +43,21 @@ export function Form() {
   function handleFirstNameChange(e) {
     setPerson({
       ...person,
-      firstName: e.target.value,
+      [e.target.name]: e.target.value,
     });
   }
 
   function handleLastNameChange(e) {
     setPerson({
       ...person,
-      lastName: e.target.value,
+      [e.target.name]: e.target.value,
     });
   }
 
   function handleEmailChange(e) {
     setPerson({
       ...person,
-      email: e.target.value,
+      [e.target.name]: e.target.value,
     });
   }
 
