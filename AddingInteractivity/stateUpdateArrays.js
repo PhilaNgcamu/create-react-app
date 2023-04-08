@@ -1,4 +1,3 @@
-import { func } from "prop-types";
 import { useState } from "react";
 
 export function List() {
@@ -7,33 +6,29 @@ export function List() {
     { id: 1, name: "Lamidi Olonade Fakeye" },
     { id: 2, name: "Louise Nevelson" },
   ];
+  let nextId = initialArtists.length;
 
+  const [name, setName] = useState("");
   const [artists, setArtists] = useState(initialArtists);
+  function handleClick() {
+    const insertAt = 1;
+    const nextArtists = [
+      ...artists.slice(0, insertAt),
+      { id: nextId++, name: name },
+      ...artists.slice(insertAt),
+    ];
+    setArtists(nextArtists);
+    setName("");
+  }
 
   return (
     <>
       <h1>Inspiring Sculptors:</h1>
+      <input value={name} onChange={(e) => setName(e.target.value)} />{" "}
+      <button onClick={handleClick}>Insert</button>
       <ul>
-        {artists.map((artist) => {
-          return (
-            <>
-              <li key={artist.id}>
-                {artist.name}{" "}
-                <button
-                  onClick={() => {
-                    setArtists(
-                      artists.filter((art) => {
-                        console.log(art.id, artist.id);
-                        return art.id !== artist.id;
-                      })
-                    );
-                  }}
-                >
-                  Delete
-                </button>
-              </li>
-            </>
-          );
+        {artists.map((artist, i) => {
+          return <li key={i}>{artist.name}</li>;
         })}
       </ul>
     </>
