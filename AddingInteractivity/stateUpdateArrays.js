@@ -1,6 +1,7 @@
+import { func } from "prop-types";
 import { useState } from "react";
 
-export default function List() {
+export function List() {
   let initialArtists = [
     { id: 0, name: "Marta Colvin Andrade" },
     { id: 1, name: "Lamidi Olonade Fakeye" },
@@ -77,4 +78,19 @@ export function ShapeEditor() {
       ))}
     </>
   );
+}
+
+const initialCounters = [0, 0, 0];
+
+export function CounterList() {
+  const [counters, setCounters] = useState(initialCounters);
+  function handleIncrementClick(index) {
+    const nextCounters = counters.map((c, i) => {
+      if (i === index) return c + 1;
+      else {
+        return c;
+      }
+    });
+    setCounters(nextCounters);
+  }
 }
