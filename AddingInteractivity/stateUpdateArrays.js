@@ -93,4 +93,22 @@ export function CounterList() {
     });
     setCounters(nextCounters);
   }
+  return (
+    <ul>
+      {counters.map((counter, i) => {
+        return (
+          <li key={i}>
+            {counter}{" "}
+            <button
+              onClick={() => {
+                handleIncrementClick(i);
+              }}
+            >
+              +1
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
 }
