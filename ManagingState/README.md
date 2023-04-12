@@ -15,6 +15,7 @@
    - Submitting: Form is completely disabled. Spinner is shown.
    - Success: "Thank you" message is shown instead of a form.
    - Error: Same as Typing state, but with an extra error message.
+   - Note: If a component has a lot of visual states, it is convenient to show whem all in one page.
 2. **Determine** what triggers those state changes.
 3. **Represent** the state in memory using `useState`.
 4. **Remove** any non-essential state variables.
