@@ -8,7 +8,8 @@
 
 - Reference: [inputWithState.js](inputWithState.js).
 
-1. **Identify** your component's different visual states.
+1. **Identify** your component's different visual states
+   - First, visualize all the different "states" of the UI the user might see. For example, Empty: Form has disabled "Submit" button. Typing: Form has an enabled "Submit" button. Submitting: Form is completely disabled. Spinner is shown. Success: "Thank you" message is shown instead of a form. Error. Same as Typing state, but with an extra error message.
 2. **Determine** what triggers those state changes.
 3. **Represent** the state in memory using `useState`.
 4. **Remove** any non-essential state variables.
