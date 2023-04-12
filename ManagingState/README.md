@@ -25,3 +25,5 @@
 4. **Remove** any non-essential state variables.
    - The goal is to prevent the cases where the state in memmory doesn't represent any valid UI that you'd want a user to see. That way you can eliminate impossible states.
 5. **Connect** the event handlers to set the state.
+
+<h1>Choosing the State Structure</h1>
