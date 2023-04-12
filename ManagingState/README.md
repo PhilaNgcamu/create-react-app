@@ -17,6 +17,7 @@
    - Error: Same as Typing state, but with an extra error message.
    - Note: If a component has a lot of visual states, it is convenient to show whem all in one page.
 2. **Determine** what triggers those state changes.
+   - You must set state variables to update the UI. For example, changing the "empty" state to a typing state, etc. You need event handlers.
 3. **Represent** the state in memory using `useState`.
 4. **Remove** any non-essential state variables.
 5. **Connect** the event handlers to set the state.
