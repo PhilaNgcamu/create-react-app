@@ -6,6 +6,8 @@
 
 <h2>Thinking about UI declaratively</h2>
 
+- Reference: [inputWithState.js](inputWithState.js).
+
 1. **Identify** your component's different visual states.
 2. **Determine** what triggers those state changes.
 3. **Represent** the state in memory using `useState`.
