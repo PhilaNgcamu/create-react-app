@@ -23,4 +23,5 @@
    - You need to represent the visual states of the component with use `useState`.
    - Simplicity is key: Each piece of state is a moving "moving piece". You want few moving pieces as possible. For example, use, `const [answer, setAnswer] = useState('')`, etc. So, represent all possible visual states with `useState`.
 4. **Remove** any non-essential state variables.
+   - The goal is to prevent the cases where the state in memmory doesn't represent any valid UI that you'd want a user to see. That way you can eliminate impossible states.
 5. **Connect** the event handlers to set the state.
