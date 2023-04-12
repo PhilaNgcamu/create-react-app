@@ -21,6 +21,6 @@
    - You may draw a flow chart of different states to visualize how the component should display for every possible logic.
 3. **Represent** the state in memory using `useState`.
    - You need to represent the visual states of the component with use `useState`.
-   - Simplicity is key: Each piece of state is a moving "moving piece". You want few moving pieces as possible.
+   - Simplicity is key: Each piece of state is a moving "moving piece". You want few moving pieces as possible. For example, use, `const [answer, setAnswer] = useState('')`.
 4. **Remove** any non-essential state variables.
 5. **Connect** the event handlers to set the state.
