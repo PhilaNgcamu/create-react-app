@@ -32,6 +32,30 @@
 
 <h2>Principles for structuring state</h2>
 
-1.  **Group related state** - merge states into a single state variable if your always updating two or more states at the same time.
-2.  **Avoid contradictions in state** - Avoid some pieces of a state that contradict each other.
-3.  **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difficult to keep them in sync.
+The goal: To make the state easy to update without any mistakes.
+
+1.  **Group related state** - merge states into a single state variable if your always updating two or more states at the same time. For example: Choose this: `const [position, setPosition] = useState({ x: 0, y: 0 });`, instead of:
+
+```
+const [x, setX] = useState(0);
+const [y, setY] = useState(0);
+```
+
+2.  **Avoid contradictions in state** - Avoid some pieces of a state that contradict each other. For example, choose:
+
+```
+  const [text, setText] = useState('');
+  const [status, setStatus] = useState('typing');
+```
+
+Instead of:
+
+```
+  const [text, setText] = useState('');
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+```
+
+Where you may combine two contradicting states into one process which is the state of th status.
+
+3. **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difficult to keep them in sync. 4. **Avoid redundant state** - 5. **Avoid deeply nested state** - Prefer to structure a state in a flat way.
