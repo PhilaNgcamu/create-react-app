@@ -2,17 +2,26 @@ import { useState } from "react";
 
 function App() {
   const obj = { count: 0, color: "red" };
-  const [count, setCount] = useState(obj);
+  const [object, setObject] = useState(obj);
   function decrementCount() {
-    setCount((c) => c - 1);
+    setObject({
+      ...object,
+      count: object.count - 1,
+      color: "YELLOW",
+    });
   }
   function incrementCount() {
-    setCount((c) => c + 1);
+    setObject({
+      ...object,
+      count: object.count + 1,
+      color: "PURPLE",
+    });
   }
   return (
     <>
       <button onClick={decrementCount}> - </button>
-      <span> {count} </span> a<button onClick={incrementCount}> + </button>
+      <span> {object.count} </span> <span> {object.color} </span>
+      <button onClick={incrementCount}> + </button>
     </>
   );
 }
