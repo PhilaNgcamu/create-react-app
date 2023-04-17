@@ -27,3 +27,10 @@
 5. **Connect** the event handlers to set the state.
 
 <h1>Choosing the State Structure</h1>
+
+- It is important to structure the state well in the component, which makes it easier to debug and modify otherwise it will be the constant source of bugs.
+
+<h2>Principles for structuring state</h2>
+
+1.  **Group related state** - merge states into a single state variable if your always updating two or more states at the same time.
+2.  **Avoid contradictions in state** - Avoid some pieces of a state that contradict each other.
