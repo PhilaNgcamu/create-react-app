@@ -56,6 +56,28 @@ Instead of:
   const [isSent, setIsSent] = useState(false);
 ```
 
-Where you may combine two contradicting states into one process which is the state of th status.
+Where you may combine two contradicting states into one process which is the state of the status.
 
-3. **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difficult to keep them in sync. 4. **Avoid redundant state** - 5. **Avoid deeply nested state** - Prefer to structure a state in a flat way.
+3. **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difficult to keep them in sync.
+
+4. **Avoid redundant state** - You should not put a calculated state from other exisiting states or a component's prop in another state during rendering. For example: Choose:
+
+```
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const fullName = firstName + ' ' + lastName;
+```
+
+Instead of:
+
+```
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [fullName, setFullName] = useState('');
+```
+
+5. **Avoid deeply nested state** - Prefer to structure a state in a flat way.
+
+```
+
+```
