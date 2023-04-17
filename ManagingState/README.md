@@ -34,4 +34,4 @@
 
 1.  **Group related state** - merge states into a single state variable if your always updating two or more states at the same time.
 2.  **Avoid contradictions in state** - Avoid some pieces of a state that contradict each other.
-3.  **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difi=ficult to keep them in sync.
+3.  **Avoid duplication in state** - When data is duplicated btween state variables or within nested objects, it is difficult to keep them in sync.
