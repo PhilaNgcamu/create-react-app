@@ -77,5 +77,3 @@ Instead of:
 ```
 
 5. **Avoid deeply nested state** - Prefer to structure a state in a flat way.
-
-<h2>Sharing State Between Components</h2>
