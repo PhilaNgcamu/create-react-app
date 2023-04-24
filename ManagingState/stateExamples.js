@@ -23,7 +23,7 @@ function App() {
   function handleIncreaseButton(index) {
     const newStateButton = buttonState.map((button) => {
       if (button.key === index) {
-        return { ...button, count: button.count++ };
+        return { ...button, count: button.count + 1 };
       }
       return button;
     });
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <ul>
-        {buttons.map((button) => {
+        {buttonState.map((button) => {
           return (
             <li key={button.key}>
               <button
