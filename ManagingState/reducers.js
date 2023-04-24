@@ -1,8 +1,13 @@
 import React, { useState, useReducer } from "react";
 
+const ACTIONS = {
+  DECREMENT: "decrement",
+  INCREMENT: "increment",
+};
+
 function reducer(state, action) {
-  if (action.type === "increment") return { count: state.count + 1 };
-  else if (action.type === "decrement") return { count: state.count - 1 };
+  if (action.type === ACTIONS.INCREMENT) return { count: state.count + 1 };
+  else if (action.type === ACTIONS.INCREMENT) return { count: state.count - 1 };
   return state;
 }
 
