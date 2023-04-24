@@ -51,4 +51,33 @@ function App() {
   );
 }
 
+import { useState } from "react";
+
+function App() {
+  const [input, setInput] = useState("");
+  const [user, setUser] = useState({
+    username: "Philasande",
+    email: "Phila@gmail.com",
+    images: [],
+  });
+  function handleChangeUser() {
+    setUser({
+      ...user,
+      username: input,
+    });
+  }
+  return (
+    <>
+      <h2>User:</h2>
+      <input onChange={(e) => setInput(e.target.value)}></input>
+      <br />
+      <br />
+      <button onClick={handleChangeUser}>Change Username</button>
+      <br />
+      <br />
+      <span>Username is {user.username}</span>
+    </>
+  );
+}
+
 export default App;
