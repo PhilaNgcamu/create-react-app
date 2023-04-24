@@ -22,8 +22,8 @@ function App() {
 
   function handleIncreaseButton(index) {
     buttonState.map((button) => {
-      if(button.key === index) {
-        return {...button, countcount++}
+      if (button.key === index) {
+        return { ...button, count: count++ };
       }
       return button;
     });
@@ -36,7 +36,11 @@ function App() {
         {buttons.map((button) => {
           return (
             <li key={button.key}>
-              <button onClick={() =>{handleIncreaseButton(button.key)}}>
+              <button
+                onClick={() => {
+                  handleIncreaseButton(button.key);
+                }}
+              >
                 {button.label} {increaseNumber}
               </button>
             </li>
