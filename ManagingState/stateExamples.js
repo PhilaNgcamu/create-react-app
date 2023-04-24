@@ -51,8 +51,6 @@ function App() {
   );
 }
 
-import { useState } from "react";
-
 function App() {
   const [input, setInput] = useState("");
   const [user, setUser] = useState({
@@ -61,10 +59,10 @@ function App() {
     images: [],
   });
   function handleChangeUser() {
-    setUser({
-      ...user,
+    setUser((obj) => ({
+      ...obj,
       username: input,
-    });
+    }));
   }
   return (
     <>
