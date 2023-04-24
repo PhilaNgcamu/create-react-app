@@ -15,12 +15,12 @@ function App() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
   //const [count, setCount] = useState(0);
   function increment() {
-    dispatch({ type: "increment" });
+    dispatch({ type: ACTIONS.INCREMENT });
 
     //  setCount((prevCount) => prevCount + 1);
   }
   function decrement() {
-    dispatch({ type: "decrement" });
+    dispatch({ type: ACTIONS.DECREMENT });
     //  setCount((prevCount) => prevCount - 1);
   }
   return (
