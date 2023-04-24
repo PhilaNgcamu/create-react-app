@@ -77,3 +77,7 @@ Instead of:
 ```
 
 5. **Avoid deeply nested state** - Prefer to structure a state in a flat way.
+
+<h2>Extracting State Logic into a Reducer</h2>
+
+- You can consolidate all the state update logic outside the component in a single function.
