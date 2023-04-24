@@ -80,4 +80,4 @@ Instead of:
 
 <h2>Extracting State Logic into a Reducer</h2>
 
-- You can consolidate all the state update logic outside the component in a single function.
+- You can consolidate all the state update logic outside the component in a single function when the complexity grows.
