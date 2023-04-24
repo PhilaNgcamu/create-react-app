@@ -81,3 +81,8 @@ Instead of:
 <h2>Extracting State Logic into a Reducer</h2>
 
 - You can consolidate all the state update logic outside the component in a single function when the complexity grows.
+
+- How to migrate from `useState` to `useReducer`:
+  1. Move from setting state to dispatching actions.
+  2. Write a reducer function.
+  3. Use the reducer from your component.
