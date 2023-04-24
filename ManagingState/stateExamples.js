@@ -1,27 +1,48 @@
 import { useState } from "react";
 
 function App() {
-  const obj = { count: 0, color: "red" };
-  const [object, setObject] = useState(obj);
-  function decrementCount() {
-    setObject({
-      ...object,
-      count: object.count - 1,
-      color: "YELLOW",
+  const buttons = [
+    {
+      key: 1,
+      label: "First Button",
+      count: 0,
+    },
+    {
+      key: 2,
+      label: "Second Button",
+      count: 0,
+    },
+    {
+      key: 3,
+      label: "Third Button",
+      count: 0,
+    },
+  ];
+  const [buttonState, setButtonState] = useState(buttons);
+
+  function handleIncreaseButton(index) {
+    buttonState.map((button) => {
+      if(button.key === index) {
+        return {...button, countcount++}
+      }
+      return button;
     });
+    setNumber((increaseNumber += 1));
   }
-  function incrementCount() {
-    setObject({
-      ...object,
-      count: object.count + 1,
-      color: "PURPLE",
-    });
-  }
+
   return (
     <>
-      <button onClick={decrementCount}> - </button>
-      <span> {object.count} </span> <span> {object.color} </span>
-      <button onClick={incrementCount}> + </button>
+      <ul>
+        {buttons.map((button) => {
+          return (
+            <li key={button.key}>
+              <button onClick={() =>{handleIncreaseButton(button.key)}}>
+                {button.label} {increaseNumber}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }
