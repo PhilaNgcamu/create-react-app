@@ -21,13 +21,13 @@ function App() {
   const [buttonState, setButtonState] = useState(buttons);
 
   function handleIncreaseButton(index) {
-    buttonState.map((button) => {
+    const newStateButton = buttonState.map((button) => {
       if (button.key === index) {
-        return { ...button, count: count++ };
+        return { ...button, count: button.count++ };
       }
       return button;
     });
-    setNumber((increaseNumber += 1));
+    setButtonState(newStateButton);
   }
 
   return (
@@ -41,7 +41,7 @@ function App() {
                   handleIncreaseButton(button.key);
                 }}
               >
-                {button.label} {increaseNumber}
+                {button.label} {button.count}
               </button>
             </li>
           );
